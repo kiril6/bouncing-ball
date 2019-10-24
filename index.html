@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Bouncing Ball</title>
+<style>
+html, body {
+	overflow: hidden;
+}
+body {
+    margin: 0;
+}
+
+#removeBall {
+    top: 4em;
+	position: fixed;
+	left: 2em;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+#removeBall:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+    <div id="container">
+        <input type="button" id="removeBall" value="Remove Ball" onclick="removeBall();" />
+        <canvas id="canvas"></canvas>
+    </div>
+<script src="logic.js"></script>
+</body>
+</html>
